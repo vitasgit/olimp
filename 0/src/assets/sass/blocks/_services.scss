@@ -1,0 +1,15 @@
+.services {
+	padding: 2em 0;
+}
+
+.services-list {
+	&__item {
+		padding: 2em 1em;
+	}
+
+	&__icon {
+		width: 64px;
+		height: 64px;
+		fill: $primary;
+	}
+}

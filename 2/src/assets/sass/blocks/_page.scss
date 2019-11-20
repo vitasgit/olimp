@@ -1,0 +1,72 @@
+.page {
+	overflow: hidden;
+	background: url("../img/page/page-bg.png") no-repeat center;
+
+	&__head,
+	&__subhead,
+	&-list__head {
+		color: black;
+		text-transform: uppercase;
+	}
+
+	&__head {
+		font-size: 2rem;
+		padding-bottom: 1rem;
+		font-weight: bold;
+	}
+
+	&__subhead {
+		font-size: 1.2rem;
+	}
+
+	&__text,
+	&-figure__quote {
+		text-align: justify;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+
+	&__text + &__text {
+		padding-top: 2rem;
+	}
+
+	&__address {
+		color: black;
+		text-align: center;
+		padding: 1rem 0;
+	}
+}
+
+.page-list {
+	&__head {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin: 1em 0;
+	}
+
+	&__text {
+		text-align: center;
+	}
+}
+
+.page-figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+
+	&__img {
+		width: 108px;
+	}
+
+	&__quote {
+		font-size: 1.2rem;
+		padding: .8rem 0 1rem 0;
+		margin: 0;
+	}
+
+	&__caption {
+		color: $primary;
+		font-weight: bold;
+	}
+}

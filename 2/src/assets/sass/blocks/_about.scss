@@ -1,0 +1,23 @@
+.about {
+
+	&-section {
+		display: flex;
+		align-items: center;
+		
+	}
+
+	&-img {
+		width: 160%;
+		position: relative;
+		right: 250px;
+
+		& img {
+			width: 120%;
+		}
+		
+	}
+
+	&-text {
+		padding-left: 3rem;
+	}
+}

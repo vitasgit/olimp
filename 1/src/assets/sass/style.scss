@@ -1,0 +1,50 @@
+@import "_vars";
+
+
+/* Default styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+/* Blocks */
+@import "blocks/_page.scss";
+@import "blocks/_container.scss";
+@import "blocks/_wrapper.scss";
+@import "blocks/_header.scss";
+@import "blocks/_intro.scss";

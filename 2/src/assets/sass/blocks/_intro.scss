@@ -1,0 +1,18 @@
+.intro {
+
+	&__head {
+		font-size: 4rem;
+		line-height: 1em;
+	}
+
+	&__subhead {
+		font-weight: bold;
+		padding-bottom: 2em;
+	}
+
+	&-btn {
+		&__cta {
+			margin-right: 1.5em;
+		}
+	}
+}

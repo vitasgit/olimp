@@ -1,0 +1,10 @@
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__head,
+	&__subhead {
+		color: white;
+	}
+}

@@ -1,0 +1,25 @@
+.wrapper {
+	&-intro {
+		width: 100%;
+		height: 100vh;
+		background: url("/assets/img/intro/bg-intro.jpg");
+	    background-position: center center;
+	    background-size: cover;
+		margin-bottom: 200px;
+	}
+
+	&-services {
+		margin-bottom: 100px;
+		position: relative;
+
+		&:before {
+			content: "";
+			width: 85%;
+			height: 100%;
+			border-radius: 0 60px 60px 0;
+			background-color: $gray;
+			position: absolute;
+			z-index: -1;
+		}
+	}
+}

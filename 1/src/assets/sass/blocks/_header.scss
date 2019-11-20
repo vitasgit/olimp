@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    &__item {
+        padding: .2em;
+    }
+
+    &__item + &__item{
+        margin-left: 2em;
+    }
+
+    &__link {
+        color: black;
+        font-size: 1.1em;
+        letter-spacing: .05em;
+        transition: color .2s linear;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
