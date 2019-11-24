@@ -1,0 +1,27 @@
+.about {
+	&__head {
+		padding: 10% 0;
+	}
+}
+
+.about-section {
+	position: relative;
+	padding-bottom: 4rem;
+
+	&__img-container {
+		width: 40%;
+		height: 400px;
+		overflow: hidden;
+		margin-right: 5%;
+	}
+
+	&__head-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__head {
+		text-align: start;
+		padding: 10% 0 5% 0;
+	}
+}

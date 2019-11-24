@@ -1,0 +1,25 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 40%;
+	padding-top: 20%;
+
+	&__head,
+	&__subhead {
+		text-align: start;
+	}
+
+	&__head {
+		font-size: 3rem;
+		padding-bottom: 1rem;
+	}
+
+	&__subhead {
+		font-size: 1.5rem;
+	}
+
+	&__btn {
+		margin-top: 15%;
+	}
+}
