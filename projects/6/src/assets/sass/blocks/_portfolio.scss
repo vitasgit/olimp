@@ -1,8 +1,15 @@
-body {
-	margin: 0;
-	padding: 0;
+.portfolio-caption {
+	&__title {
+		color: $primary;
+	}
+
+	&__text {
+		color: lighten($primary, 20%)
+	}
 }
 
+
+/************grid************/
 .grid {
 	width: 100%;
 	display: grid;
@@ -19,6 +26,37 @@ body {
 	overflow: hidden;
 }
 
+.portfolio-list__item:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: opacity .3s ease;
+}
+
+.portfolio-list__item:hover:after {
+	opacity: .3;
+}
+
+.portfolio-list__item:hover .portfolio-caption {
+	transform: translateY(-20px);
+}
+
+.portfolio-caption {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	transform: translateY(100px);
+	transition: transform .3s ease;
+	z-index: 1;
+}
+
 .grid .portfolio-list__item img {
 	position: absolute;
 	top: 0;
@@ -26,6 +64,11 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.portfolio-list__item:hover img {
+	transform: scale(1.1);
 }
 
 .grid .portfolio-list__item.a,
